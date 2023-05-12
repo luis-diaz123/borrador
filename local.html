@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo a Ver Que Sale</title>
+    <link rel="icon" href="icono.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos CSS adicionales */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="barra-de-tareas">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <div id="pt1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="contenido-container" class="d-flex">
+                <div id="imgs">
+                    <section onmouseout="ocultarDescripcion()">
+                        <img src="img/1.jpg"
+                            onmouseover="mostrarDescripcion('Iron Man (Tony Stark): Es un genio multimillonario y filántropo con habilidades en ingeniería y tecnología. Utiliza una armadura avanzada con una amplia gama de armas y gadgets. Tony Stark es conocido por su ingenio, arrogancia y su evolución como héroe a lo largo de las películas. Es uno de los fundadores de los Avengers y desempeña un papel clave en la defensa del mundo.') ">
+
+                        <img src="img/2.jpg"
+                            onmouseover="mostrarDescripcion('Capitán América (Steve Rogers): Es un superhéroe patriota y el símbolo de la valentía y la justicia. Steve Rogers participó en un experimento que lo transformó en un súper soldado, otorgándole fuerza y habilidades sobrehumanas. Es un líder nato y posee un escudo indestructible. El Capitán América personifica los ideales de honor y lealtad, y su presencia inspira a los demás miembros del equipo.')">
+                        <img src="img/3.jpg"
+                            onmouseover="mostrarDescripcion('Viuda Negra (Natasha Romanoff): Es una experta en espionaje y combate cuerpo a cuerpo. Natasha Romanoff es una hábil asesina entrenada desde una edad temprana en Rusia. A pesar de su pasado oscuro, se une a los Avengers y utiliza sus habilidades para el bien. Es una maestra en el sigilo y la manipulación, y sus habilidades son vitales para las misiones del equipo.')">
+                        <img src="img/4.jpg"
+                            onmouseover="mostrarDescripcion('Ojo de Halcón (Clint Barton): Es un arquero y combatiente altamente habilidoso. Clint Barton es un experto en el manejo del arco y flecha, así como en el combate cuerpo a cuerpo. Posee una puntería excepcional y es capaz de realizar acrobacias y movimientos precisos. Aunque no posee habilidades sobrehumanas, Ojo de Halcón aporta una perspectiva táctica y un gran compromiso al equipo de los Avengers.')">
+                        <img src="img/5.jpg"
+                            onmouseover="mostrarDescripcion('Thor (Dios del Trueno): Es un dios asgardiano, hijo de Odín y heredero del trono de Asgard. Thor posee una fuerza y resistencia increíbles, además de poder controlar los rayos y tener habilidades de vuelo. Porta el martillo Mjolnir, una de las armas más poderosas en el universo Marvel. A lo largo de su historia, Thor ha luchado para demostrar su valía y proteger tanto a la Tierra como a su hogar en Asgard.')">
+                        <img src="img/6.jpg"
+                            onmouseover="mostrarDescripcion('Hulk (Bruce Banner): Es el alter ego del científico Bruce Banner. Después de un accidente con radiación gamma, Banner se transforma en Hulk, una criatura de fuerza descomunal y resistencia casi indestructible. Hulk es conocido por su temperamento volátil y su fuerza ilimitada. Aunque a veces es difícil de controlar, Banner lucha por mantener el equilibrio entre su inteligencia y la bestia dentro de él.')">
+                    </section>
+                </div>
+                <div id="pt2">Definicion Perrona</div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="pt3" class="articles-container col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+
+                <article>
+                    <img src="img/sm1.jpg">
+                    <img src="img/sp.png">
+                </article>
+                <article>
+                    <img src="img/sm2.jpg">
+                    <img src="img/sp2.png">
+                </article>
+                <article>
+                    <img src="img/sm3.jpg">
+                    <img src="img/sp3.png">
+                </article>
+            </div>
+            <div id="pt4" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+
+            </div>
+        </div>
+    </main>
+    <a href="#" class="back-to-top">
+        <span class="arrow"></span>
+    </a>
+    <footer>
+        <div class="contenido-pie">
+            <div class="seccion-redes">
+                <h3>Síguenos en redes sociales:</h3>
+                <ul class="redes-sociales">
+                    <li><a href="www.youtube.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="seccion-enlaces">
+                <h3>Enlaces útiles: </h3>
+                <ul class="enlaces-utiles">
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
