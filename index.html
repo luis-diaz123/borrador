@@ -5,347 +5,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="icon" href="./img/loader.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Fundacion Dr. Erick Muro</title>
 </head>
 
 <body>
-  <div id="loader">
-    <img src="./img/loader.png" alt="Cargando...">
-  </div>
+  <div class="container-fluid fixed-top">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/logo sin fondo.png" class="img-fluid" width="10%" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  p-3 m-1" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-3 m-1" aria-current="page" href="#Nosotros">Nosotros</a>
+              </li>
+              <!--
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>-->
+              <li class="nav-item">
+                <a class="nav-link  p-3 m-1" aria-current="page" href="#Principios">Principios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-3 m-1" aria-current="page" href="#">Contacto</a>
+              </li>
+            </ul>
 
-  <div>
-    <a id="scrolltop" href="#top"></a>
-  </div>
-
-  <nav class="navbar navbar-expand-lg navbar-white  static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./img/Logo.png" alt="..." height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Nosotros">Misión-Visión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#galeria">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#valores">Valores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contacto">Unete</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <!--Banner-->
-  <section class="showcase-area" id="showcase">
-    <div class="showcase-container">
-    </div>
-  </section>
-  <!--About-->
-  <section id="about">
-    <div class="about-wrapper container">
-      <div class="about-text">
-        <h1>¿Quiénes Somos?</h1>
-        <p>Somos un grupo de rinconenses que hemos identificado varias problemáticas en nuestro municipio, por lo que
-          decidimos conjuntar fuerza intelectual y de trabajo desde 2021 para generar acciones que ayuden a combatir los
-          problemas y generar mejores condiciones de vida para los habitantes de la región.
-          <br> En 2022, este trabajo se
-          formaliza con la constitución de la Fundación Erick Muro como una manera de dar mayor proyección a las
-          acciones e institucionalizar los esfuerzos.
-          <br>Agradecemos a la comunidad de Rincón de Romos, especialmente a
-          nuestros voluntarios y aliados por hacer posible nuestra labor.
-        </p>
-      </div>
-    </div>
-  </section>
-<!--Slider de Marcas-->
-  <section>
-    <h1 id="Aliados">Nuestros Aliados y Marcas asociadas</h1>
-    <div class="slider">
-        <div class="slide-track">
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!--Contacto-->
-  <section>
-    <div id="Contacto" class="">
-      <form id="form" action="">
-        <div class="form">
-          <h1 id="h1">Unete!</h1>
-          <div class="grupo">
-            <input type="text" name="" id="input" required><span class="barra"></span>
-            <label>Nombre</label>
           </div>
-          <div class="grupo">
-            <input type="email" name="" id="input" required><span class="barra"></span>
-            <label>Correo Electronico</label>
-          </div>
-          <div class="grupo">
-            <input type="text" name="" id="input" required><span class="barra"></span>
-            <label>Asunto</label>
-          </div>
-          <div class="grupo">
-            <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
-            <label>Mensaje</label>
-          </div>
-          <button id="button" type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!--Valores-->
-  <div class="valores text-center text-light">
-    <div class="col-lg-12 col-md-12 col-sm-12 mt-2 align-self-center px-4">
-      <h3 id="valores">Valores</h3>
-      <p id="parrafovalor">
-        Los valores son importantes dentro de nuestra fundación, es lo que nos motiva a ser lo que somos y nos ayudan
-        a definir un estado sólido dentro de nuestro municipio.
-      </p>
-      <div class="row justify-content-start barra1">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <details class="estiloacordeon">
-            <summary>Honestidad</summary>
-            <div class="contenido">
-              <p id="parrafo">
-                Es el valor supremo, ninguna acción se debe realizar falseando la información.
-              </p>
-            </div>
-          </details>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <details class="estiloacordeon">
-            <summary>Compromiso</summary>
-            <div class="contenido">
-              <p id="parrafo">
-                Nos enfocamos en ayudar a nuestra sociedad a construir un mejor futuro.
-              </p>
-            </div>
-          </details>
-        </div>
-      </div>
-      <div class="row justify-content-end  barra1">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <details class="estiloacordeon">
-            <summary>Sustentabilidad</summary>
-            <div class="contenido">
-              <p id="parrafo">
-                Todas las acciones que se realizan dentro de la fundación están orientadas al cuidado del medio
-                ambiente, al crecimiento económico de nuestra sociedad y a la integración de todas las personas en
-                Rincón de Romos.
-              </p>
-            </div>
-          </details>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <details class="estiloacordeon">
-            <summary>Responsabilidad</summary>
-            <div class="contenido">
-              <p id="parrafo">
-                Cada miembro que integra nuestra familia es consciente de su labor y su gran aportación es fundamental
-                para que los proyectos se realicen con el sello distintivo de la fundación.
-              </p>
-            </div>
-          </details>
-        </div>
-      </div>
+      </nav>
     </div>
   </div>
 
-  <!--Mision Vision-->
-  <div id="Nosotros">
-    <div class="vm">
-      <div class="mission-column">
-        <div class="content">
-          <h2>Misión</h2>
-          <p>En 2025 nos convertimos en la fundación más sustentable de Rincón de Romos y llevamos a la comunidad la
-            información, los apoyos y la gestión necesaria para enriquecer la calidad de vida de todos los rinconences.
-          </p>
-          <img src="./img/6.jpg" id="img1" alt="Imagen de la Misión">
-        </div>
-      </div>
-      <div class="vision-column">
-        <div class="content">
-          <h2>Visión</h2>
-          <p>Somos el grupo social de mayor apoyo a la comunidad rinconense a través de la gestión, la vinculación, y el
-            desarrollo para las personas que buscan mejorar el entorno de nuestro municipio, así como el apoyo directo a
-            los menos favorecidos.</p>
-          <img src="./img/5.jpg" id="img2" alt="Imagen de la Visión">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Principios-->
-  <section id="Principios">
-    <h2 class="principles-menu-heading">Principios</h2>
-    <div class="principles-menu-container">
-      <div class="principles-menu-group">
-        <div class="principles-menu-item col-lg-6 col-md-6 col-sm-12">
-          <div class="principles-img">
-            <img src="./img/7.jpeg" alt="" />
-          </div>
-          <div class="principles-description">
-            <h2 class="principles-title">Simplicidad</h2>
-            <p>
-              Sabemos que un mensaje entre más sencillo tiene mayor recordación, por ello nuestro lenguaje es claro,
-              conciso y directo.
-            </p>
-          </div>
-        </div>
-
-        <div class="principles-menu-item col-lg-6 col-md-6 col-sm-12">
-          <div class="principles-img">
-            <img src="./img/8.jpg" alt="error" />
-          </div>
-          <div class="principles-description">
-            <h2 class="principles-title">Respeto</h2>
-            <p>
-              Nuestro contenido no ofende, no entra en debate, ni busca en ninguna forma generar
-              polémica. Buscamos generar una reflexión profunda sin agredir u ofender.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="principles-menu-group">
-        <div class="principles-menu-item col-lg-6 col-md-6 col-sm-12">
-          <div class="principles-img">
-            <img src="./img/9.jpg" alt="" />
-          </div>
-          <div class="principles-description">
-            <h2 class="principles-title">Sinceridad</h2>
-            <p>
-              Hablamos con la verdad siempre. Comunicamos la realidad sin alterarla, podemos
-              enfatizar pero no distorsionarla.
-            </p>
-          </div>
-        </div>
-        <div class="principles-menu-item col-lg-6 col-md-6 col-sm-12">
-          <div class="principles-img">
-            <img src="./img/10.jpg" alt="" />
-          </div>
-          <div class="principles-description">
-            <h2 class="principles-title">Orden</h2>
-            <p>
-              Respetamos el orden y jerarquías. Transmitimos nuestro mensaje de forma coherente y
-              organizada.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="principles-menu-group">
-        <div class="principles-menu-item col-lg-6 col-md-6 col-sm-12">
-          <div class="principles-img">
-            <img src="./img/11.jpg" alt="" />
-          </div>
-          <div class="principles-description">
-            <h2 class="principles-title">Amor</h2>
-            <p>
-              Amamos lo que hacemos, nos sentimos satisfechos al cumplir el propósito por el cual
-              nacimos: mejorar la calidad de vida de todas las personas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Galeria-->
-  <div class=" container box top slid bg-primary bg-opacity-50">
+  <div class="container slid margen bg-primary bg-opacity-50">
     <div id="carouselExampleControls" class="carousel slide p-3" data-bs-ride="carousel">
-      <h1 class="m-3  display-4 text-center text-light" id="galeria">Galeria</h1>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <figure id="este">
-            <img src="./img/12.jpg" class="d-block w-100" id="este__image" />
-           
-          </figure>
+          <img src="./img/1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <figure id="este">
-            <img src="./img/1.jpg" class="d-block w-100" id="este__image" />
-           
-          </figure>
+          <img src="./img/2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <figure id="este">
-            <img src="./img/2.jpg" class="d-block w-100" id="este__image" />
-          </figure>
+          <img src="./img/3.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <figure id="este">
-            <img src="./img/3.jpg" class="d-block w-100" id="este__image" />
-           
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure id="este">
-            <img src="./img/4.jpg" class="d-block w-100" id="este__image" />
-            
-          </figure>
+          <img src="./img/4.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -361,28 +88,219 @@
     </div>
   </div>
 
-
-
-  <!--Descargar-->
-  <div  id="Descargar" class="mt-4 container bg-primary bg-opacity-50 text-center text-light" id="Descargar">
+  <div class="mt-4 container bg-primary bg-opacity-50 text-center text-light" id="Nosotros">
     <div class="row">
-      <div class="download-container col-lg-12 col-md-12 col-sm-12 vision mt-4 px-4">
-        <h1>Presiona aquí para descargar el reporte de actividades 2022</h1>
-        <button class="btn btn-primary download-btn">Descargar archivos <i class="fas fa-download"></i></button>
-        <div class="countdown"></div>
-        <div class="pleaseWait-text">Por favor espera...</div>
+      <div class="col-lg-6 col-md-12 col-sm-12 vision mt-4 align-self-center px-4">
+        <h3>Visión</h3>
+        <p>En 2025 nos convertimos en la fundación más sustentable de Rincón de Romos y llevamos a la comunidad la
+          información, los apoyos y la gestión necesaria para enriquecer la calidad de vida de todos los rinconenes.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 vision mt-4 align-self-center px-4">
+        <h3>Misión</h3>
+        <p>Somos el grupo social de mayor apoyo a la comunidad rinconense a través de la gestión, la vinculación, y el
+          desarrollo para las personas que buscan mejorar el entorno de nuestro municipio, así como el apoyo directo a
+          los menos favorecidos.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-2 valores align-self-center px-4">
+          <h3>Valores</h3>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h5>Honestidad</h5>
+              <p class="justificar">Es el valor supremo, ninguna acción se debe realizar falseando la información.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h5>Compromiso</h5>
+              <p class="justificar">Nos enfocamos en ayudar a nuestra sociedad a construir un mejor futuro.</p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h5>Sustentabilidad</h5>
+              <p class="justificar">Todas las acciones que se realizan dentro de la fundación están orientadas al
+                cuidado del medio ambiente, al crecimiento económico de nuestra sociedad y a la integración de todas las
+                personas en Rincón de Romos.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h5>Responsabilidad</h5>
+              <p class="justificar">Cada miembro que integra nuestra familia, es consciente de su labor y su gran
+                aportación es fundamental para que los proyectos se realicen con el sello distintivo de nuestra
+                fundación.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  
 
-  <!--Footer-->
+
+
+  <div class="mt-4  container bg-primary bg-opacity-50" id="Principios">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="m-3 display-4 text-center text-light">Principios de comunicación de la fundación</h1>
+      </div>
+    </div>
+    <div class="row text-center p-2">
+      <div class="col-sm-12 col-md-12 col-lg-4  ">
+        <div class="card mx-auto mt-2" style="width: 22rem;
+          height: 12rem;">
+
+          <div class="card-body">
+            <h4 class="card-title">Simplicidad</h5>
+              <p class="justificar">Sabemos que un mensaje entre más sencillo tiene mayor recordación, por ello nuestro
+                lenguaje es claro, conciso y directo.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card mx-auto mt-2" style="width: 22rem;
+          height: 12rem;">
+
+          <div class="card-body">
+            <h4 class="card-title">Respeto</h5>
+              <p class="justificar">Nuestro contenido no ofende, no entra en debate, ni busca en ninguna forma generar
+                polémica. Buscamos generar una reflexión profunda sin agredir u ofender.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card mx-auto mt-2" style="width: 22rem;height: 12rem;">
+
+          <div class="card-body">
+            <h4 class="card-title">Sinceridad</h5>
+              <p class="justificar">Hablamos con la verdad siempre. Comunicamos la realidad sin alterarla, podemos
+                enfatizar pero no distorsionarla.</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-4 text-center pb-4">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto mt-2" style="width: 30rem;height: 12rem;">
+
+          <div class="card-body">
+            <h4 class="card-title">Amor</h5>
+              <p class="justificar">Amamos lo que hacemos, nos sentimos satisfechos al cumplir el propósito por el cual
+                nacimos: mejorar la calidad de vida de todas las personas.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto mt-2" style="width: 30rem; height: 12rem;">
+
+          <div class="card-body">
+            <h4 class="card-title">Orden</h5>
+              <p class="justificar">Respetamos el orden y jerarquías. Transmitimos nuestro mensaje de forma coherente y
+                organizada.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container bg-primary bg-opacity-50 form text-center ">
+    <section class="mb-4 mt-4">
+
+      <!--Section heading-->
+      <h2 class="h1-responsive font-weight-bold text-center mt-4">Contáctanos</h2>
+      <!--Section description-->
+      <p class="text-center w-responsive mx-auto mb-5">¿Quieres ponerte en contacto con nosotros?, es necesario llenar
+        el siguiente formulario y dar clic en el botón enviar, en seguida nos pondremos en contacto.</p>
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">Nombre</label>
+                  <input type="text" id="name" name="name" class="form-control">
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+
+                  <label for="email" class="">Correo Electronico</label>
+                  <input type="text" id="email" name="email" class="form-control">
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row mt-2">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="subject" class="">Asunto</label>
+                  <input type="text" id="subject" name="subject" class="form-control">
+
+                </div>
+              </div>
+              <div class="col-md-6">
+
+                <div class="md-form">
+                  <label for="message">Tu mensaje</label>
+                  <textarea type="text" id="message" name="message" rows="2"
+                    class="form-control md-textarea"></textarea>
+
+                </div>
+
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row mt-2">
+
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left mt-4 mb-4">
+            <a class="btn btn-primary">Enviar</a>
+          </div>
+          <div class="status"></div>
+        </div>
+
+
+      </div>
+
+    </section>
+  </div>
+
+
+
+
   <footer class="text-center text-white mt-5 pie">
     <!-- Grid container -->
     <div class="container letrapie">
-      <div class="row dr">
-        <img src="./img/logbanner.png" alt="" class="imgdoc my-3">
+      <div class="row dr ">
+        <img src="./img/logo2.png" alt="" class="imgdoc my-3">
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -394,12 +312,11 @@
             </svg>
 
           </a>
-          <p>Calle Motolinia Ote. 214, Centro Histórico, 20400, Rincón de Romos</p>
+          <p>Centro, Rincón de Romos, Mexico, 20400</p>
         </div>
-        
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="https://www.facebook.com/fundaciondrem/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook"
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook"
               viewBox="0 0 16 16">
               <path
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -415,9 +332,8 @@
                 d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z" />
             </svg>
           </a>
-          <p>465 9511835</p>
+          <p>4445559990</p>
         </div>
-        
       </div>
     </div>
     <!-- Grid container -->
@@ -425,13 +341,15 @@
     <!-- Copyright -->
     <div class="text-center p-3">
       © 2023 "MasterTics Soluciones informaticas"
+
     </div>
     <!-- Copyright -->
   </footer>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
 </body>
 
 </html>
