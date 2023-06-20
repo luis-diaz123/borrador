@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Instrument Serif', serif;
+}
+
+body{
+    background-image: url("../img/fondo.svg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu{
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,119,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+.menu a{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #0d0f91;
+    font-size: 25px;
+}
+.justificar{
+    text-align: justify;
+    
+}
+
+
+.vision h3{
+    font-size: 40px;
+}
+.vision p{
+    font-size: 22px;
+    text-align: justify;
+}
+.valores h3{
+    font-size: 40px;
+}
+
+.margen{
+    margin-top: 8%;
+}
+
+.pie{
+    
+    background: rgba(0,119,255,1);
+}
+.letrapie{
+    font-size: 25px;
+}
+.pie a{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #0d0f91;
+}
+
+.slid img{
+    width: 500px;
+    height: 650px;
+}
+.dr{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.imgdoc{
+    border-radius:20%;
+    
+
+}
+.form{
+    font-size: 25px;
+}
